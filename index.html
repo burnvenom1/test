@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yönlendiriliyorsunuz...</title>
-    <meta http-equiv="refresh" content="0;url=https://giris.hepsiburada.com/?ReturnUrl=https%3A%2F%2Foauth.hepsiburada.com%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DSPA%26redirect_uri%3Dhttps%253A%252F%252Fwww.hepsiburada.com%252Fuyelik%252Fcallback%26response_type%3Dcode%26scope%3Dopenid%2520profile%26state%3Df883eaadc71d42c8bfe3aa90bc07585a%26code_challenge%3DI4Ihs_2x7BPCMgYoGd7YrazWUqIYgxTzIGMQVovpJfg%26code_challenge_method%3DS256%26response_mode%3Dquery%26customizeSegment%3DORDERS%26ActivePage%3DPURE_LOGIN%26oidcReturnUrl%3D%252Fsiparislerim">
+    <title>Çerezleri Al</title>
 </head>
 <body>
-    <h1>Hepsiburada Giriş Sayfasına Yönlendiriliyorsunuz...</h1>
-    <p>Yönlendirilmediyseniz, <a href="https://giris.hepsiburada.com/?ReturnUrl=https%3A%2F%2Foauth.hepsiburada.com%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DSPA%26redirect_uri%3Dhttps%253A%252F%252Fwww.hepsiburada.com%252Fuyelik%252Fcallback%26response_type%3Dcode%26scope%3Dopenid%2520profile%26state%3Df883eaadc71d42c8bfe3aa90bc07585a%26code_challenge%3DI4Ihs_2x7BPCMgYoGd7YrazWUqIYgxTzIGMQVovpJfg%26code_challenge_method%3DS256%26response_mode%3Dquery%26customizeSegment%3DORDERS%26ActivePage%3DPURE_LOGIN%26oidcReturnUrl%3D%252Fsiparislerim">buraya tıklayın.</a></p>
+    <h1>Çerez Verisini Al</h1>
+    <button onclick="goToHepsiburada()">Hepsiburada'ya Git</button>
+
+    <script>
+        // Hepsiburada'ya yönlendirme ve çerez alma işlemi
+        function goToHepsiburada() {
+            // Hepsiburada'ya yönlendiriyoruz
+            window.location.href = "https://www.hepsiburada.com";
+            
+            // 5 saniye sonra çerezleri almayı deniyoruz
+            setTimeout(() => {
+                console.log("Çerezler: ", document.cookie);
+            }, 5000);
+        }
+    </script>
 </body>
 </html>
